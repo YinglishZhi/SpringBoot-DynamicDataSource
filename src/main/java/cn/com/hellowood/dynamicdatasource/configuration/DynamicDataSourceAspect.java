@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 public class DynamicDataSourceAspect {
     private static final Logger logger = LoggerFactory.getLogger(DynamicDataSourceAspect.class);
 
-    private final String[] QUERY_PREFIX = {"get"};
+    private final String[] QUERY_PREFIX = {"select"};
 
     /**
      * Dao aspect.
