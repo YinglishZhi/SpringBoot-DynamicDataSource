@@ -1,6 +1,7 @@
 package cn.com.hellowood.dynamicdatasource.apiutil.config;
 
 
+import cn.com.hellowood.dynamicdatasource.apiutil.interceptor.ApiLogHandler;
 import cn.com.hellowood.dynamicdatasource.apiutil.interceptor.ApiResponseBodyReturnValueHandler;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
@@ -33,6 +34,7 @@ public abstract class BaseWebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new ApiLogHandler());
     }
 
     @Override
