@@ -1,11 +1,5 @@
 package cn.com.hellowood.dynamicdatasource.apiutil.exception;
 
-/**
- * @author XiaoLei
- * @date 2018/4/17 15:19
- * @description
- */
-
 import cn.com.hellowood.dynamicdatasource.apiutil.exception.enums.CustomExceptionEnum;
 
 /**
